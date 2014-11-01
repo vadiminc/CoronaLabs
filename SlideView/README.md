@@ -4,7 +4,7 @@ Slide View v 1.1
 
 Demo code:
 
-```
+```XHTML
 local function mySlideListener(event)
 	print("Action:", event.phase, "Current Slide:", event.slide)
 end
