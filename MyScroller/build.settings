@@ -1,0 +1,52 @@
+settings =
+{
+      orientation =
+      {
+			default = "landscapeRight",
+			supported =
+			{
+				"landscapeRight", "landscapeLeft","portrait", "portraitUpsideDown", 
+			},
+--			default = "portrait",
+--			supported =
+--			{
+--				"portrait", "portraitUpsideDown", 
+--			},			
+		},
+	iphone =
+	{
+		UIAppFonts =
+            {
+                "HelveticaNeueCyr-Thin.ttf",
+                "HelveticaNeueCyr-ThinItalic.ttf",
+                "HelveticaNeueCyr-Light.ttf",
+                "HelveticaNeueCyr-LightItalic.ttf",
+                "HelveticaNeueCyr-Medium.ttf",
+                "HelveticaNeueCyr-MediumItalic.ttf"
+            },
+		plist =
+			{
+					UIApplicationExitsOnSuspend = false,
+					UIPrerenderedIcon = true,
+					UIStatusBarHidden = true,
+					CFBundleIconFile = "Icon.png",
+        CFBundleIconFiles = {
+            "Icon.png",
+            "Icon@2x.png",
+            "Icon-72.png",
+            "Icon-72@2x.png",
+            "Icon-Small-50.png",
+            "Icon-Small-50@2x.png",
+            "Icon-Small.png",
+            "Icon-Small@2x.png",
+          },
+					MinimumOSVersion = "5.1.0",
+			},
+	},
+	android = {
+		usesPermissions = {
+			"android.permission.INTERNET",
+			"com.android.vending.CHECK_LICENSE",
+		}
+	}
+}	
